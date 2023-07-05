@@ -13,6 +13,9 @@ RUN apk --no-cache add php82-json php82-sockets
 RUN sed -i -r 's@Errorlog .*@Errorlog /dev/stderr@i' /etc/apache2/httpd.conf
 RUN echo "Transferlog /dev/stdout" >> /etc/apache2/httpd.conf
 
+# set network adapter to host
+RUN --network=host
+
 # Copy data for add-on
 COPY run.sh /
 COPY index.html /
