@@ -1,6 +1,6 @@
 ---
 name: Apache2 Basic PHP Server
-version: 1.0.0
+version: 1.0.1
 slug: apache2-basic-php
 description: Webserver with some basic PHP Modules
 url: https://github.com/realpasha/hassio-addons/tree/main/apache2-basic-php
